@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", "sans-serif";
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url('images/register.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	width: 500px;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2); 
+	padding : 20px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px
+}
+
+.wrapper h1 {
+	font-size: 36px;
+	color: #fff;
+}
+
+.input-details {
+	position: relative;
+	width: 100%;
+}
+
+.input-details input {
+	width: 100%;
+	padding: 20px 45px 20px 20px;
+	margin: 10px 0;
+	height: 50px;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 40px;
+	font-size: 20px;
+	color: white;
+}
+
+.input-details input::placeholder {
+	color: white;
+	font-size: 20px;
+}
+
+.input-details i {
+	position: absolute;
+	right: 15px;
+	padding: 25px 0;
+	font-size: 20px;
+	color: white;
+}
+
+.registration-link {
+	margin-top: 20px;
+}
+
+.btn {
+	width: 100%;
+	padding: 15px;
+	background-color: #27ae60;
+	color: white;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.btn:hover {
+	background-color: #1e8449;
+	color: black;
+}
+
+.login-link {
+	margin-top: 10px;
+}
+
+.login-link a {
+	color: #2980b9;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.login-link a:hover {
+	text-decoration: underline;
+}
+/* Responsive Design */
+@media ( max-width : 480px) {
+	.wrapper {
+		padding: 20px;
+		width: 80%;
+	}
+}
